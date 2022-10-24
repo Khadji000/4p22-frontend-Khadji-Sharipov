@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    max-height: 100%;
+    
+}
+.BookHeader{
+    width: 100%;
+    background: #590BFF;
+    position: fixed;
+    top: 0px;
+    height: 10vh;
+    z-index: 10;
+}
+.BookHeader__container{
+    text-align: center;
+}
+.BookHeader__container_name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    color: #FFFFFF;
+}
+.book{
+    top: 15vh;
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    background: #FFFFFF;
+}
+.BookSaidbar{
+    position: fixed;
+    width: 15vw;
+}
+.BookSaidbar__band{
+    position: absolute;
+    width: 2px;
+    height: 70vh;
+    left: 18vw;
+    top: 1vh;
+    background: #C4C4C4;
+}
+.BookSaidbar__header{
+    text-align: center;
+    margin-top: 50%;
+}
+.BookSaidbar__header_name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+}
+.BookSaidbar__links{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    text-decoration-line: underline;
+    color: #FF710B;
+}
+.BookContent{
+    height: 85vh;
+    width: 80%;
+    left: 20%;
+    position: absolute;
+    z-index: 9;
+    overflow: auto;
+}
+.BookContent_scroll{
+    top: 15vh;
+}
+.BookContent__nav{
+    background: #590BFF;
+    position: sticky;
+    top: 0vh;
+    height: 5vh;
+    border-radius: 5px;
+}
+.BookContent__nav_content{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+.BookContent__content{
+    text-indent: 70px;
+}
+ul{
+    list-style: none;
+}
+
+.BookContent__content_surname{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
