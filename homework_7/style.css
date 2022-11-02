@@ -1,0 +1,487 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+.main{
+    background: #1B2473;
+    max-width: 2560px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-container{
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px #000000;
+}
+.main-container__input{
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+
+    color: #787878;
+}
+.main-container__email{
+    position: absolute;
+}
+.main-container__email_email{
+    position: absolute;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+
+    color: #787878;
+}
+.main-container__input_email{
+    box-sizing: border-box;
+    position: absolute;
+
+
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    border-radius: 10px;
+}
+.main-container__password{
+    position: absolute;
+
+}
+.main-container__password_password{
+    position: absolute;
+
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+
+    color: #787878;
+}
+.main-container__input_pass{
+    box-sizing: border-box;
+
+    position: absolute;
+
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    border-radius: 10px;
+}
+.main-container__checkbox{
+    position: absolute;
+
+}
+.main-container__checkbox_box{
+    box-sizing: border-box;
+
+    position: absolute;
+
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    border-radius: 7px;
+}
+.main-container__checkbox_label{
+    position: absolute;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: #787878;
+}
+.main-container__button{
+    position: absolute;
+}
+.main-container__button_button{
+    position: absolute;
+
+    background: #1A226B;
+    border-radius: 10px;
+}
+.main-container__button_input{
+    position: absolute;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .main-container{
+        width: calc(728 / 768 * 100vw);
+        height: calc(697 / 768 * 100vw);
+        left: calc(20 / 768 * 100vw);
+        top: calc(20 / 768 * 100vw);
+    }
+    .main-container__input{
+        width: calc(138 / 768 * 100vw);
+        height: calc(50 / 768 * 100vw);
+        left: calc(288 / 768 * 100vw);
+        top: calc(38 / 768 * 100vw);
+        font-size: calc(60 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
+    }
+    .main-container__email{
+        width: calc(638 / 768 * 100vw);
+        height: calc(75 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        top: calc(101 / 768 * 100vw);
+    }
+    .main-container__email_email{
+        width: calc(60 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        left: calc(8 / 768 * 100vw);
+        top: calc(0 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .main-container__input_email{
+        width: calc(638 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        top: calc(24 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+    }
+    .main-container__password{
+        width: calc(638 / 768 * 100vw);
+        height: calc(73 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        top: calc(187 / 768 * 100vw);
+    }
+    .main-container__password_password{
+        width: calc(84 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        left: calc(8 / 768 * 100vw);
+        top: calc(0 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+
+    }
+    .main-container__input_pass{
+        width: calc(638 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        top: calc(24 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+    }
+    .main-container__checkbox{
+        width: calc(408 / 768 * 100vw);
+        height: calc(32 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        top: calc(279 / 768 * 100vw);
+    }
+    .main-container__checkbox_box{
+        width: calc(32 / 768 * 100vw);
+        height: calc(32 / 768 * 100vw);
+    }
+    .main-container__checkbox_label{
+        width: calc(358 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        left: calc(42 / 768 * 100vw);
+        top: calc(8 / 768 * 100vw);
+        font-weight: 400;
+        font-size: calc(18 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .main-container__button{
+        width: calc(220 / 768 * 100vw);
+        height: calc(80 / 768 * 100vw);
+        left: calc(254 / 768 * 100vw);
+        top: calc(375 / 768 * 100vw);
+    }
+    .main-container__button_button{
+        width: calc(220 / 768 * 100vw);
+        height: calc(80 / 768 * 100vw);
+        border-radius: 10px;
+    }
+    .main-container__button_input{
+        width: calc(92 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        left: calc(64 / 768 * 100vw);
+        top: calc(32 / 768 * 100vw);
+        font-size: calc(32 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .main-container{
+        width: calc(600 / 1440 * 100vw);
+        height: calc(400 / 1440 * 100vw);
+    }
+    .main-container__input{
+        width: calc(115 / 1440 * 100vw);
+        height: calc(50 / 1440 * 100vw);
+        left: calc(242 / 1440 * 100vw);
+        top: calc(27 / 1440 * 100vw);
+        font-size: calc(50 / 1440 * 100vw);
+        line-height: calc(50 / 1440 * 100vw);
+    }
+    .main-container__email{
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        top: calc(112 / 1440 * 100vw);
+    }
+    .main-container__email_email{
+        width: calc(40 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        left: calc(8 / 1440 * 100vw);
+        top: calc(-19 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .main-container__input_email{
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        font-size: calc(24 / 1440 * 100vw);
+    }
+    .main-container__password{
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        top: calc(193 / 1440 * 100vw);
+    }
+    .main-container__password_password{
+        width: calc(56 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        left: calc(8 / 1440 * 100vw);
+        top: calc(-19 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+
+    }
+    .main-container__input_pass{
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        font-size: calc(24 / 1440 * 100vw);
+    }
+    .main-container__checkbox{
+        width: calc(312 / 1440 * 100vw);
+        height: calc(24 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        top: calc(258 / 1440 * 100vw);
+    }
+    .main-container__checkbox_box{
+        width: calc(24 / 1440 * 100vw);
+        height: calc(24 / 1440 * 100vw);
+    }
+    .main-container__checkbox_label{
+        width: calc(278 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        left: calc(34 / 1440 * 100vw);
+        top: calc(4 / 1440 * 100vw);
+        font-weight: 400;
+        font-size: calc(14 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .main-container__button{
+        width: calc(180 / 1440 * 100vw);
+        height: calc(52 / 1440 * 100vw);
+        left: calc(210 / 1440 * 100vw);
+        top: calc(334 / 1440 * 100vw);
+    }
+    .main-container__button_button{
+        width: calc(180 / 1440 * 100vw);
+        height: calc(52 / 1440 * 100vw);
+        border-radius: 10px;
+    }
+    .main-container__button_input{
+        width: calc(69 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        left: calc(55 / 1440 * 100vw);
+        top: calc(18 / 1440 * 100vw);
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+}
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    .main-container{
+        width: calc(600 / 1920 * 100vw);
+        height: calc(400 / 1920 * 100vw);
+    }
+    .main-container__input{
+        width: calc(115 / 1920 * 100vw);
+        height: calc(50 / 1920 * 100vw);
+        left: calc(242 / 1920 * 100vw);
+        top: calc(27 / 1920 * 100vw);
+        font-size: calc(50 / 1920 * 100vw);
+        line-height: calc(50 / 1920 * 100vw);
+    }
+    .main-container__email{
+        width: calc(510 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        left: calc(45 / 1920 * 100vw);
+        top: calc(112 / 1920 * 100vw);
+    }
+    .main-container__email_email{
+        width: calc(40 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        left: calc(8 / 1920 * 100vw);
+        top: calc(-19 / 1920 * 100vw);
+        font-size: calc(16 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .main-container__input_email{
+        width: calc(509 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        font-size: calc(24 / 1920 * 100vw);
+    }
+    .main-container__password{
+        width: calc(510 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        left: calc(45 / 1920 * 100vw);
+        top: calc(193 / 1920 * 100vw);
+    }
+    .main-container__password_password{
+        width: calc(56 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        left: calc(8 / 1920 * 100vw);
+        top: calc(-19 / 1920 * 100vw);
+        font-size: calc(16 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+
+    }
+    .main-container__input_pass{
+        width: calc(509 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        font-size: calc(24 / 1920 * 100vw);
+    }
+    .main-container__checkbox{
+        width: calc(312 / 1920 * 100vw);
+        height: calc(24 / 1920 * 100vw);
+        left: calc(45 / 1920 * 100vw);
+        top: calc(258 / 1920 * 100vw);
+    }
+    .main-container__checkbox_box{
+        width: calc(24 / 1920 * 100vw);
+        height: calc(24 / 1920 * 100vw);
+    }
+    .main-container__checkbox_label{
+        width: calc(278 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        left: calc(34 / 1920 * 100vw);
+        top: calc(4 / 1920 * 100vw);
+        font-weight: 400;
+        font-size: calc(14 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .main-container__button{
+        width: calc(180 / 1920 * 100vw);
+        height: calc(52 / 1920 * 100vw);
+        left: calc(210 / 1920 * 100vw);
+        top: calc(334 / 1920 * 100vw);
+    }
+    .main-container__button_button{
+        width: calc(180 / 1920 * 100vw);
+        height: calc(52 / 1920 * 100vw);
+        border-radius: 10px;
+    }
+    .main-container__button_input{
+        width: calc(69 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        left: calc(55 / 1920 * 100vw);
+        top: calc(18 / 1920 * 100vw);
+        font-size: calc(24 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+        font-size: calc(24 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+}
+@media screen and (min-width: 1921px) {
+    .main-container{
+        width: calc(600 / 2560 * 100vw);
+        height: calc(400 / 2560 * 100vw);
+    }
+    .main-container__input{
+        width: calc(115 / 2560 * 100vw);
+        height: calc(50 / 2560 * 100vw);
+        left: calc(242 / 2560 * 100vw);
+        top: calc(27 / 2560 * 100vw);
+        font-size: calc(50 / 2560 * 100vw);
+        line-height: calc(50 / 2560 * 100vw);
+    }
+    .main-container__email{
+        width: calc(510 / 2560 * 100vw);
+        height: calc(49 / 2560 * 100vw);
+        left: calc(45 / 2560 * 100vw);
+        top: calc(112 / 2560 * 100vw);
+    }
+    .main-container__email_email{
+        width: calc(40 / 2560 * 100vw);
+        height: calc(16 / 2560 * 100vw);
+        left: calc(8 / 2560 * 100vw);
+        top: calc(-19 / 2560 * 100vw);
+        font-size: calc(16 / 2560 * 100vw);
+        line-height: calc(16 / 2560 * 100vw);
+    }
+    .main-container__input_email{
+        width: calc(509 / 2560 * 100vw);
+        height: calc(49 / 2560 * 100vw);
+        font-size: calc(24 / 2560 * 100vw);
+    }
+    .main-container__password{
+        width: calc(510 / 2560 * 100vw);
+        height: calc(49 / 2560 * 100vw);
+        left: calc(45 / 2560 * 100vw);
+        top: calc(193 / 2560 * 100vw);
+    }
+    .main-container__password_password{
+        width: calc(56 / 2560 * 100vw);
+        height: calc(16 / 2560 * 100vw);
+        left: calc(8 / 2560 * 100vw);
+        top: calc(-19 / 2560 * 100vw);
+        font-size: calc(16 / 2560 * 100vw);
+        line-height: calc(16 / 2560 * 100vw);
+
+    }
+    .main-container__input_pass{
+        width: calc(509 / 2560 * 100vw);
+        height: calc(49 / 2560 * 100vw);
+        font-size: calc(24 / 2560 * 100vw);
+    }
+    .main-container__checkbox{
+        width: calc(312 / 2560 * 100vw);
+        height: calc(24 / 2560 * 100vw);
+        left: calc(45 / 2560 * 100vw);
+        top: calc(258 / 2560 * 100vw);
+    }
+    .main-container__checkbox_box{
+        width: calc(24 / 2560 * 100vw);
+        height: calc(24 / 2560 * 100vw);
+    }
+    .main-container__checkbox_label{
+        width: calc(278 / 2560 * 100vw);
+        height: calc(16 / 2560 * 100vw);
+        left: calc(34 / 2560 * 100vw);
+        top: calc(4 / 2560 * 100vw);
+        font-weight: 400;
+        font-size: calc(14 / 2560 * 100vw);
+        line-height: calc(16 / 2560 * 100vw);
+    }
+    .main-container__button{
+        width: calc(180 / 2560 * 100vw);
+        height: calc(52 / 2560 * 100vw);
+        left: calc(210 / 2560 * 100vw);
+        top: calc(334 / 2560 * 100vw);
+    }
+    .main-container__button_button{
+        width: calc(180 / 2560 * 100vw);
+        height: calc(52 / 2560 * 100vw);
+        border-radius: 10px;
+    }
+    .main-container__button_input{
+        width: calc(69 / 2560 * 100vw);
+        height: calc(16 / 2560 * 100vw);
+        left: calc(55 / 2560 * 100vw);
+        top: calc(18 / 2560 * 100vw);
+        font-size: calc(24 / 2560 * 100vw);
+        line-height: calc(16 / 2560 * 100vw);
+        font-size: calc(24 / 2560 * 100vw);
+        line-height: calc(16 / 2560 * 100vw);
+    }
+}
