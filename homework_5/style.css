@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
+    max-width: 100%;
     margin: 0;
     
 }
@@ -153,4 +153,7 @@ body{
     font-size: 28px;
     line-height: 33px;
     color: #000000;
+}
+@media (max-width: 1440px) {
+    .body
 }

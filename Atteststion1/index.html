@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВХОД</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <section class="header__side">
+            <img src="/img/1280px-IU_logo 1.png" alt="" class="header__side_logo">
+            <h1 class="header__side_frontend">PCS Frontend</h1>
+        </section>
+        <section class="header__box_reg">
+            <a href="#close_input" class="header__side_input">Вход</a>
+            <a href="#close_registration" class="header__side_reg">Регистрация</a>
+        </section>
+    </header>
+    <main class="main">
+        <div class="main-container" id="close_input">
+            <h1 class="main-container__input">Вход</h1>
+            <div class="main-container__email">
+                <span class="main-container__email_email">Email</span>
+                <input class="main-container__input_email" type="email" name="email" id="input_email" placeholder="Введите email">
+            </div>
+            <div class="main-container__password">
+                <span class="main-container__password_password">Пароль</span>
+                <input class="main-container__input_pass" type="password" name="password" id="input_password" placeholder="Введите пароль">
+            </div>
+            <div class="main-container__button">
+                <a class="main-container__button_button" href="#"><span class="main-container__button_input">Войти</span></a>
+            </div>
+        </div>    
+
+
+        <div class="container__reg" id="close_registration">
+
+            <h1 class="container__r-input">Регистрация</h1>
+
+            <div class="container__r-email">
+                <span class="container__text">Email</span>
+                <input class="container__input" type="email" name="email" id="input_email" placeholder="Введите email">
+            </div>
+
+            <div class="container__r-pass">
+                <span class="container__text-pass">Пароль</span>
+                <input class="container__input-pass" type="password" name="email" id="input_email" placeholder="Введите пароль">
+            </div>
+
+            <div class="container__r-pass2">
+                <span class="container__text-pass2">Подтверждение пороля</span>
+                <input class="container__input-pass2" type="password" name="email" id="input_email" placeholder="Подтвердите пароль">
+            </div>
+
+            <label class="form-gender">Пол</label>
+
+            <div class="form-radio">
+                <input class="radio-input" type="radio" id="man" name="radio" value="one">
+                <label class="radio-lable" for="man">Мужчина</label>
+            </div>
+
+            <div class="form-radio2">
+                <input class="radio-input" type="radio" id="woman" name="radio" value="one">
+                <label class="radio-lable" for="woman">Женщина</label>
+            </div>
+
+            <label class="form_textarea" for="textarea">О себе</label>
+            <textarea class="form__textarea-block" name="textarea" id="textarea" placeholder="Расскажите о себе..."></textarea>
+
+            <div class="form_checbox">
+                <input class="checkbox_input" id="checkbox" type="checkbox" name="check" value="ONE">
+                <label class="checbox__label" for="checkbox">Я согласен получать обновления на почту</label>
+            </div>
+
+            <div class="container__button">
+                <a class="container__button_input" href="#">
+                    <span class="container__button_text">Войти</span>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

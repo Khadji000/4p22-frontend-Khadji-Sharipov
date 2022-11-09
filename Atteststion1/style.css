@@ -1,0 +1,1225 @@
+*{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.header {
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+.header__side {
+    display: flex;
+    flex-direction: row;
+}
+.header__side_logo {
+    position: absolute;
+}
+.header__side_frontend {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #787878;
+}
+.header__box_reg{
+    display: flex;
+    align-items: center;
+}
+.header__side_input {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+.header__side_input:hover{
+    color: #1A226B;
+}
+.header__side_reg {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+.header__side_reg:hover{
+    color: #1A226B;
+}
+.main{
+    background: #FFFFFF;
+}
+.container__reg {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+.container__reg:target {
+    opacity: 1;
+    visibility: visible;
+}
+.main-container{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px 10px rgb(0 0 0 / 25%)
+}
+.main-container:target {
+    opacity: 1;
+    visibility: visible;
+}
+.container__r-input {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+.container__r-email {
+    position: absolute;
+}
+.container__input {
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #787878; 
+}
+.container__input::placeholder {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #CCCCCC;
+}
+
+.container__text {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+.container__r-pass {
+    position: absolute;
+}
+.container__input-pass::placeholder {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #CCCCCC;
+}
+.container__text-pass {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+.container__input-pass {
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+}
+.container__r-pass2 {
+    position: absolute;
+}
+.container__text-pass2 {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+.container__input-pass2::placeholder {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #CCCCCC;
+}
+.container__input-pass2 {
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    font-size: 28px;
+}
+.form-gender {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+.form-radio{
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: #787878;
+}
+.form-radio2{
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: #787878;
+}
+
+.radio-input{
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.radio-lable {
+    position: absolute;
+}
+.radio-lable::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    border-radius: 50%;
+    z-index: 1;
+}
+.radio-lable::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: #787878;
+    opacity: 0;
+    z-index: 2;
+}
+.radio-input:checked + .radio-lable::after{
+    opacity: 1;
+}
+.form_textarea {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+.form__textarea-block {
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+}
+textarea::placeholder {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #CCCCCC;
+}
+.form_checbox {
+    position: absolute;
+}
+.checbox__label {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: #787878;
+}
+.checkbox_input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.checbox__label::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    z-index: 1;
+}
+.checbox__label::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    background: #787878;
+    z-index: 2;
+}
+.checkbox_input:checked + .checbox__label::after{
+    opacity: 1;
+}
+.container__button {
+    position: absolute;
+}
+.container__button_text {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.container__button_input {
+    position: absolute;
+    background: #1A226B;
+}
+.main-container__input{
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+.main-container__email{
+    position: absolute;
+}
+.main-container__email_email{
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+.main-container__input_email{
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+}
+.main-container__input_email::placeholder {
+    color: #CCCCCC;
+}
+.main-container__password{
+    position: absolute;
+}
+.main-container__password_password{
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+.main-container__input_pass{
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+}
+.main-container__input_pass::placeholder {
+    color: #CCCCCC;
+}
+.main-container__button{
+    position: absolute;
+}
+.main-container__button_button{
+    position: absolute;
+    background: #1A226B;
+}
+.main-container__button_input{
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+}@media screen and (min-width: 320px) and (max-width: 768px) {
+    .header {
+        height: calc(80 / 768 * 100vw);
+    }
+    .header__side {
+        height: calc(80 / 768 * 100vw);
+    }
+    .header__side_logo {
+        width: calc(124 / 768 * 100vw);
+        height: calc(25 / 768 * 100vw);
+        left: calc(20 / 768 * 100vw);;
+        top: calc(25 / 768 * 100vw);
+    }
+    .header__side_frontend {
+        width: calc(162 / 768 * 100vw);
+        height: calc(29 / 768 * 100vw);
+        left: calc(178 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(29 / 768 * 100vw);
+    }
+    .header__box_reg{
+        padding-left: 75%;
+        height: calc(80 / 768 * 100vw);
+    }
+    .header__side_input {
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(19 / 768 * 100vw);
+        margin-right: calc(20 / 768 * 100vw);
+    }
+    .header__side_reg {
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(19 / 768 * 100vw);
+    }
+
+
+    .container__reg {
+        width: calc(600 / 768 * 100vw);
+        height: calc(875 / 768 * 100vw);
+        left: calc(84 / 768 * 100vw);
+        top: calc(160 / 768 * 100vw);
+    }
+    .container__r-input {
+        width: calc(302 / 768 * 100vw);
+        height: calc(50 / 768 * 100vw);
+        left: calc(158 / 768 * 100vw);
+        font-size: calc(50 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
+    }
+    .container__r-email {
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        top: calc(112 / 768 * 100vw);
+    }
+    .container__input {
+        width: calc(509 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+    }
+    .container__input::placeholder {
+        width: calc(259 / 768 * 100vw);
+        height: calc(36 / 768 * 100vw);
+        left: calc(15 / 768 * 100vw);
+        top: calc(7 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+    }
+    .container__text {
+        width: calc(40 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        top: calc(-21 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .container__r-pass {
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        top: calc(193 / 768 * 100vw);
+    }
+    .container__input-pass::placeholder {
+        width: calc(212 / 768 * 100vw);
+        height: calc(36 / 768 * 100vw);
+        left: calc(15 / 768 * 100vw);
+        top: calc(7 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+    }
+    .container__text-pass {
+        width: calc(56 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        top: calc(-20 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .container__input-pass {
+        width: calc(509 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+    }
+    .container__r-pass2 {
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        left: calc(45/ 768 * 100vw);
+        top: calc(274 / 768 * 100vw);
+    }
+    .container__text-pass2 {
+        width: calc(182 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        top: calc(-20 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+    }
+    .container__input-pass2::placeholder {
+        width: calc(276 / 768 * 100vw);
+        height: calc(36 / 768 * 100vw);
+        left: calc(15 / 768 * 100vw);
+        top: calc(7 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+    }
+    .container__input-pass2 {
+        width: calc(509 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+    }
+    .form-gender {
+        width: calc(30 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        top: calc(340 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .form-radio{
+        width: calc(100 / 768 * 100vw);
+        height: calc(40 / 768 * 100vw);
+        left: calc(74 / 768 * 100vw);
+        top: calc(365 / 768 * 100vw);
+        font-size: calc(14 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .form-radio2{
+        width: calc(100 / 768 * 100vw);
+        height: calc(40 / 768 * 100vw);
+        left: calc(74 / 768 * 100vw);
+        top: calc(388 / 768 * 100vw);
+        font-size: calc(14 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .radio-lable::before {
+        left: calc(-28 / 768 * 100vw);
+        width: calc(18 / 768 * 100vw);
+        height: calc(18 / 768 * 100vw);
+    }
+    .radio-lable::after {
+        width: calc(12 / 768 * 100vw);
+        height: calc(12 / 768 * 100vw);
+        left: calc(-25 / 768 * 100vw);
+        top: calc(3 / 768 * 100vw);
+    }
+    .form_textarea {
+        width: calc(50 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        top: calc(410 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .form__textarea-block {
+        width: calc(509 / 768 * 100vw);
+        height: calc(246 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        top: calc(436 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+    }
+    textarea::placeholder {
+        width: calc(277 / 768 * 100vw);
+        height: calc(36 / 768 * 100vw);
+        left: calc(15 / 768 * 100vw);
+        top: calc(7 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+    }
+    .form_checbox {
+        width: calc(312 / 768 * 100vw);
+        height: calc(24 / 768 * 100vw);
+        left: calc(43 / 768 * 100vw);
+        top: calc(706 / 768 * 100vw);
+    }
+    .checbox__label {
+        padding-left: calc(34 / 768 * 100vw);
+        width:calc(285 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        top: calc(4 / 768 * 100vw);
+        font-size: calc(14 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .checbox__label::before {
+        width: calc(24 / 768 * 100vw);
+        height: calc(24 / 768 * 100vw);
+        right: calc(260 / 768 * 100vw);
+    }
+    .checbox__label::after {
+        width:calc(12 / 768 * 100vw);
+        height: calc(12 / 768 * 100vw);
+        left: calc(6 / 768 * 100vw);
+        top: calc(6 / 768 * 100vw);
+    }
+    .container__button {
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+        left: calc(210 / 768 * 100vw);
+        top: calc(786 / 768 * 100vw);
+    }
+    .container__button_text {
+        width: calc(145 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        left: calc(50 / 768 * 100vw);
+        top: calc(18 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .container__button_input {
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+    }
+
+    .main-container{
+        width: calc(600 / 768 * 100vw);
+        height: calc(383 / 768 * 100vw);
+        left: calc(84 / 768 * 100vw);
+        top: calc(160 / 768 * 100vw);
+    }
+    .main-container__input{
+        width: calc(115 / 768 * 100vw);
+        height: calc(50 / 768 * 100vw);
+        left: calc(242 / 768 * 100vw);
+        font-size: calc(50 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
+    }
+    .main-container__email{
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        top: calc(112 / 768 * 100vw);
+    }
+    .main-container__email_email{
+        width: calc(40 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        left: calc(8 / 768 * 100vw);
+        top: calc(-19 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .main-container__input_email{
+        width: calc(509 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+    }
+
+    .main-container__password{
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        top: calc(193 / 768 * 100vw);
+    }
+    .main-container__password_password{
+        width: calc(56 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        left: calc(8 / 768 * 100vw);
+        top: calc(-19 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+    .main-container__input_pass{
+        width: calc(509 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+    }
+    .main-container__button{
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+        left: calc(210 / 768 * 100vw);
+        top: calc(294 / 768 * 100vw);
+    }
+    .main-container__button_button{
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+    }
+    .main-container__button_input{
+        width: calc(69 / 768 * 100vw);
+        height: calc(16 / 768 * 100vw);
+        left: calc(55 / 768 * 100vw);
+        top: calc(18 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .header {
+        height: calc(80 / 1440 * 100vw);
+    }
+    .header__side {
+        height: calc(80 / 1440 * 100vw);
+    }
+    .header__side_logo {
+        width: calc(222 / 1440 * 100vw);
+        height: calc(50 / 1440 * 100vw);
+        left: calc(30 / 1440 * 100vw);;
+        top: calc(18 / 1440 * 100vw);
+    }
+    .header__side_frontend {
+        width: calc(242 / 1440 * 100vw);
+        height: calc(44 / 1440 * 100vw);
+        left: calc(282 / 1440 * 100vw);
+        font-size: calc(36 / 1440 * 100vw);
+        line-height: calc(44 / 1440 * 100vw);
+    }
+    .header__box_reg{
+        height: calc(80 / 1440 * 100vw);
+        padding-left: 80%;
+    }
+    .header__side_input {
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(29 / 1440 * 100vw);
+        margin-right: calc(20 / 768 * 100vw);
+    }
+    .header__side_reg {
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(29 / 1440 * 100vw);
+    }
+
+
+    .container__reg {
+        width: calc(600 / 1440 * 100vw);
+        height: calc(875 / 1440 * 100vw);
+        left: calc(420 / 1440 * 100vw);
+        top: calc(180 / 1440 * 100vw);
+    }
+    .container__r-input {
+        width: calc(302 / 1440 * 100vw);
+        height: calc(50 / 1440 * 100vw);
+        left: calc(158 / 1440 * 100vw);
+        font-size: calc(50 / 1440 * 100vw);
+        line-height: calc(50 / 1440 * 100vw);
+    }
+    .container__r-email {
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        top: calc(112 / 1440 * 100vw);
+    }
+    .container__input {
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+    }
+    .container__input::placeholder {
+        width: calc(259 / 1440 * 100vw);
+        height: calc(36 / 1440 * 100vw);
+        left: calc(15 / 1440 * 100vw);
+        top: calc(7 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+    }
+    .container__text {
+        width: calc(40 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        top: calc(-21 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .container__r-pass {
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        top: calc(193 / 1440 * 100vw);
+    }
+    .container__input-pass::placeholder {
+        width: calc(212 / 1440 * 100vw);
+        height: calc(36 / 1440 * 100vw);
+        left: calc(15 / 1440 * 100vw);
+        top: calc(7 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+    }
+    .container__text-pass {
+        width: calc(56 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        top: calc(-20 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .container__input-pass {
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+    }
+    .container__r-pass2 {
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        left: calc(45/ 1440 * 100vw);
+        top: calc(274 / 1440 * 100vw);
+    }
+    .container__text-pass2 {
+        width: calc(182 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        top: calc(-20 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+    }
+    .container__input-pass2::placeholder {
+        width: calc(276 / 1440 * 100vw);
+        height: calc(36 / 1440 * 100vw);
+        left: calc(15 / 1440 * 100vw);
+        top: calc(7 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+    }
+    .container__input-pass2 {
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+    }
+    .form-gender {
+        width: calc(30 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        top: calc(340 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .form-radio{
+        width: calc(100 / 1440 * 100vw);
+        height: calc(40 / 1440 * 100vw);
+        left: calc(74 / 1440 * 100vw);
+        top: calc(365 / 1440 * 100vw);
+        font-size: calc(14 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .form-radio2{
+        width: calc(100 / 1440 * 100vw);
+        height: calc(40 / 1440 * 100vw);
+        left: calc(74 / 1440 * 100vw);
+        top: calc(388 / 1440 * 100vw);
+        font-size: calc(14 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .radio-lable::before {
+        left: calc(-28 / 1440 * 100vw);
+        width: calc(18 / 1440 * 100vw);
+        height: calc(18 / 1440 * 100vw);
+    }
+    .radio-lable::after {
+        width: calc(12 / 1440 * 100vw);
+        height: calc(12 / 1440 * 100vw);
+        left: calc(-25 / 1440 * 100vw);
+        top: calc(3 / 1440 * 100vw);
+    }
+    .form_textarea {
+        width: calc(50 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        top: calc(410 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .form__textarea-block {
+        width: calc(509 / 1440 * 100vw);
+        height: calc(246 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        top: calc(436 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+    }
+    textarea::placeholder {
+        width: calc(277 / 1440 * 100vw);
+        height: calc(36 / 1440 * 100vw);
+        left: calc(15 / 1440 * 100vw);
+        top: calc(7 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+    }
+    .form_checbox {
+        width: calc(312 / 1440 * 100vw);
+        height: calc(24 / 1440 * 100vw);
+        left: calc(43 / 1440 * 100vw);
+        top: calc(706 / 1440 * 100vw);
+    }
+    .checbox__label {
+        padding-left: calc(34 / 1440 * 100vw);
+        width:calc(285 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        top: calc(4 / 1440 * 100vw);
+        font-size: calc(14 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .checbox__label::before {
+        width: calc(24 / 1440 * 100vw);
+        height: calc(24 / 1440 * 100vw);
+        right: calc(260 / 1440 * 100vw);
+    }
+    .checbox__label::after {
+        width:calc(12 / 1440 * 100vw);
+        height: calc(12 / 1440 * 100vw);
+        left: calc(6 / 1440 * 100vw);
+        top: calc(6 / 1440 * 100vw);
+    }
+    .container__button {
+        width: calc(180 / 1440 * 100vw);
+        height: calc(52 / 1440 * 100vw);
+        left: calc(210 / 1440 * 100vw);
+        top: calc(786 / 1440 * 100vw);
+    }
+    .container__button_text {
+        width: calc(145 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        left: calc(50 / 1440 * 100vw);
+        top: calc(18 / 1440 * 100vw);
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .container__button_input {
+        width: calc(180 / 1440 * 100vw);
+        height: calc(52 / 1440* 100vw);
+    }
+
+
+
+    .main-container{
+        width: calc(600 / 1440 * 100vw);
+        height: calc(383 / 1440 * 100vw);
+        left: calc(403 / 1440 * 100vw);
+        top: calc(205 / 1440 * 100vw);
+    }
+    .main-container__input{
+        width: calc(115 / 1440 * 100vw);
+        height: calc(50 / 1440 * 100vw);
+        left: calc(242 / 1440 * 100vw);
+        font-size: calc(50 / 1440 * 100vw);
+        line-height: calc(50 / 1440 * 100vw);
+    }
+    .main-container__email{
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        top: calc(112 / 1440 * 100vw);
+    }
+    .main-container__email_email{
+        width: calc(40 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        left: calc(8 / 1440 * 100vw);
+        top: calc(-19 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .main-container__input_email{
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+    }
+    .main-container__password{
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        top: calc(193 / 1440 * 100vw);
+    }
+    .main-container__password_password{
+        width: calc(56 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        left: calc(8 / 1440 * 100vw);
+        top: calc(-19 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    .main-container__input_pass{
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+    }
+    .main-container__button{
+        width: calc(180 / 1440 * 100vw);
+        height: calc(52 / 1440 * 100vw);
+        left: calc(210 / 1440 * 100vw);
+        top: calc(294 / 1440 * 100vw);
+    }
+    .main-container__button_button{
+        width: calc(180 / 1440 * 100vw);
+        height: calc(52 / 1440 * 100vw);
+    }
+    .main-container__button_input{
+        width: calc(43 / 1440 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        left: calc(55 / 1440 * 100vw);
+        top: calc(18 / 1440 * 100vw);
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+}
+@media screen and (min-width: 1441px) {
+    .header {
+        height: calc(80 / 1920 * 100vw);
+    }
+    .header__side {
+        height: calc(80 / 1920 * 100vw);
+    }
+    .header__side_logo {
+        width: calc(222 / 1920 * 100vw);
+        height: calc(50 / 1920 * 100vw);
+        left: calc(30 / 1920 * 100vw);;
+        top: calc(18 / 1920 * 100vw);
+    }
+    .header__side_frontend {
+        width: calc(242 / 1920 * 100vw);
+        height: calc(44 / 1920 * 100vw);
+        left: calc(282 / 1920 * 100vw);
+        font-size: calc(36 / 1920 * 100vw);
+        line-height: calc(44 / 1920 * 100vw);
+    }
+    .header__box_reg{
+        height: calc(80 / 1920 * 100vw);
+        padding-left: 85%;
+    }
+    .header__side_input {
+        font-size: calc(24 / 1920 * 100vw);
+        line-height: calc(29 / 1920 * 100vw);
+        margin-right: calc(20 / 768 * 100vw);
+    }
+    .header__side_reg {
+        font-size: calc(24 / 1920 * 100vw);
+        line-height: calc(29 / 1920 * 100vw);
+    }
+
+
+    .container__reg {
+        width: calc(600 / 1920 * 100vw);
+        height: calc(875 / 1920 * 100vw);
+        left: calc(660 / 1920 * 100vw);
+        top: calc(180 / 1920 * 100vw);
+    }
+    .container__r-input {
+        width: calc(302 / 1920 * 100vw);
+        height: calc(50 / 1920 * 100vw);
+        left: calc(158 / 1920 * 100vw);
+        font-size: calc(50 / 1920 * 100vw);
+        line-height: calc(50 / 1920 * 100vw);
+    }
+    .container__r-email {
+        width: calc(510 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        left: calc(45 / 1920 * 100vw);
+        top: calc(112 / 1920 * 100vw);
+    }
+    .container__input {
+        width: calc(509 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        font-size: calc(28 / 1920 * 100vw);
+    }
+    .container__input::placeholder {
+        width: calc(259 / 1920 * 100vw);
+        height: calc(36 / 1920 * 100vw);
+        left: calc(15 / 1920 * 100vw);
+        top: calc(7 / 1920 * 100vw);
+        font-size: calc(28 / 1920 * 100vw);
+        line-height: calc(36 / 1920 * 100vw);
+    }
+    .container__text {
+        width: calc(40 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        top: calc(-21 / 1920 * 100vw);
+        font-size: calc(16 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .container__r-pass {
+        width: calc(510 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        left: calc(45 / 1920 * 100vw);
+        top: calc(193 / 1920 * 100vw);
+    }
+    .container__input-pass::placeholder {
+        width: calc(212 / 1920 * 100vw);
+        height: calc(36 / 1920 * 100vw);
+        left: calc(15 / 1920 * 100vw);
+        top: calc(7 / 1920 * 100vw);
+        font-size: calc(28 / 1920 * 100vw);
+        line-height: calc(36 / 1920 * 100vw);
+    }
+    .container__text-pass {
+        width: calc(56 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        top: calc(-20 / 1920 * 100vw);
+        font-size: calc(16 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .container__input-pass {
+        width: calc(509 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        font-size: calc(28 / 1920 * 100vw);
+    }
+    .container__r-pass2 {
+        width: calc(510 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        left: calc(45/ 1920 * 100vw);
+        top: calc(274 / 1920 * 100vw);
+    }
+    .container__text-pass2 {
+        width: calc(182 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        top: calc(-20 / 1920 * 100vw);
+        font-size: calc(16 / 1920 * 100vw);
+    }
+    .container__input-pass2::placeholder {
+        width: calc(276 / 1920 * 100vw);
+        height: calc(36 / 1920 * 100vw);
+        left: calc(15 / 1920 * 100vw);
+        top: calc(7 / 1920 * 100vw);
+        font-size: calc(28 / 1920 * 100vw);
+        line-height: calc(36 / 1920 * 100vw);
+    }
+    .container__input-pass2 {
+        width: calc(509 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        font-size: calc(28 / 1920 * 100vw);
+    }
+    .form-gender {
+        width: calc(30 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        left: calc(45 / 1920 * 100vw);
+        top: calc(340 / 1920 * 100vw);
+        font-size: calc(16 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .form-radio{
+        width: calc(100 / 1920 * 100vw);
+        height: calc(40 / 1920 * 100vw);
+        left: calc(74 / 1920 * 100vw);
+        top: calc(365 / 1920 * 100vw);
+        font-size: calc(14 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .form-radio2{
+        width: calc(100 / 1920 * 100vw);
+        height: calc(40 / 1920 * 100vw);
+        left: calc(74 / 1920 * 100vw);
+        top: calc(388 / 1920 * 100vw);
+        font-size: calc(14 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .radio-lable::before {
+        left: calc(-28 / 1920 * 100vw);
+        width: calc(18 / 1920 * 100vw);
+        height: calc(18 / 1920 * 100vw);
+    }
+    .radio-lable::after {
+        width: calc(12 / 1920 * 100vw);
+        height: calc(12 / 1920 * 100vw);
+        left: calc(-25 / 1920 * 100vw);
+        top: calc(3 / 1920 * 100vw);
+    }
+    .form_textarea {
+        width: calc(50 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        left: calc(45 / 1920 * 100vw);
+        top: calc(410 / 1920 * 100vw);
+        font-size: calc(16 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .form__textarea-block {
+        width: calc(509 / 1920 * 100vw);
+        height: calc(246 / 1920 * 100vw);
+        left: calc(45 / 1920 * 100vw);
+        top: calc(436 / 1920 * 100vw);
+        font-size: calc(28 / 1920 * 100vw);
+    }
+    textarea::placeholder {
+        width: calc(277 / 1920 * 100vw);
+        height: calc(36 / 1920 * 100vw);
+        left: calc(15 / 1920 * 100vw);
+        top: calc(7 / 1920 * 100vw);
+        font-size: calc(28 / 1920 * 100vw);
+        line-height: calc(36 / 1920 * 100vw);
+    }
+    .form_checbox {
+        width: calc(312 / 1920 * 100vw);
+        height: calc(24 / 1920 * 100vw);
+        left: calc(43 / 1920 * 100vw);
+        top: calc(706 / 1920 * 100vw);
+    }
+    .checbox__label {
+        padding-left: calc(34 / 1920 * 100vw);
+        width:calc(285 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        top: calc(4 / 1920 * 100vw);
+        font-size: calc(14 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .checbox__label::before {
+        width: calc(24 / 1920 * 100vw);
+        height: calc(24 / 1920 * 100vw);
+        right: calc(260 / 1920 * 100vw);
+    }
+    .checbox__label::after {
+        width:calc(12 / 1920 * 100vw);
+        height: calc(12 / 1920 * 100vw);
+        left: calc(6 / 1920 * 100vw);
+        top: calc(6 / 1920 * 100vw);
+    }
+    .container__button {
+        width: calc(180 / 1920 * 100vw);
+        height: calc(52 / 1920 * 100vw);
+        left: calc(210 / 1920 * 100vw);
+        top: calc(786 / 1920 * 100vw);
+    }
+    .container__button_text {
+        width: calc(145 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        left: calc(50 / 1920 * 100vw);
+        top: calc(18 / 1920 * 100vw);
+        font-size: calc(24 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .container__button_input {
+        width: calc(180 / 1920 * 100vw);
+        height: calc(52 / 1920* 100vw);
+    }
+
+
+    .main-container{
+        width: calc(600 / 1920 * 100vw);
+        height: calc(383 / 1920 * 100vw);
+        left: calc(660 / 1920 * 100vw);
+        top: calc(205 / 1920 * 100vw);
+    }
+    .main-container__input{
+        width: calc(115 / 1920 * 100vw);
+        height: calc(50 / 1920 * 100vw);
+        left: calc(242 / 1920 * 100vw);
+        font-size: calc(50 / 1920 * 100vw);
+        line-height: calc(50 / 1920 * 100vw);
+    }
+    .main-container__email{
+        width: calc(510 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        left: calc(45 / 1920 * 100vw);
+        top: calc(112 / 1920 * 100vw);
+    }
+    .main-container__email_email{
+        width: calc(40 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        left: calc(8 / 1920 * 100vw);
+        top: calc(-19 / 1920 * 100vw);
+        font-size: calc(16 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .main-container__input_email{
+        width: calc(509 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        font-size: calc(28 / 1920 * 100vw);
+    }
+    .main-container__password{
+        width: calc(510 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        left: calc(45 / 1920 * 100vw);
+        top: calc(193 / 1920 * 100vw);
+    }
+    .main-container__password_password{
+        width: calc(56 / 1920 * 100vw);
+        height: calc(16 / 1440 * 100vw);
+        left: calc(8 / 1920 * 100vw);
+        top: calc(-19 / 1920 * 100vw);
+        font-size: calc(16 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+    .main-container__input_pass{
+        width: calc(509 / 1920 * 100vw);
+        height: calc(49 / 1920 * 100vw);
+        font-size: calc(28 / 1920 * 100vw);
+    }
+    .main-container__button{
+        width: calc(180 / 1920 * 100vw);
+        height: calc(52 / 1920 * 100vw);
+        left: calc(210 / 1920 * 100vw);
+        top: calc(294 / 1920 * 100vw);
+    }
+    .main-container__button_button{
+        width: calc(180 / 1920 * 100vw);
+        height: calc(52 / 1920 * 100vw);
+    }
+    .main-container__button_input{
+        width: calc(43 / 1920 * 100vw);
+        height: calc(16 / 1920 * 100vw);
+        left: calc(55 / 1920 * 100vw);
+        top: calc(18 / 1920 * 100vw);
+        font-size: calc(24 / 1920 * 100vw);
+        line-height: calc(16 / 1920 * 100vw);
+    }
+}
