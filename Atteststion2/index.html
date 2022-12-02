@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ВХОД</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__side">
+        <img src="img/1280px-IU_logo 1.png" alt="" class="header__side_logo" />
+        <h1 class="header__side_frontend">PCS Frontend</h1>
+      </section>
+      <section class="header__box_reg">
+        <a href="#close_input" class="header__side_input">Вход</a>
+        <a href="#close_registration" class="header__side_reg">Регистрация</a>
+      </section>
+    </header>
+    <main class="main">
+      <form action="#" class="main-container" name="main" id="close_input">
+        <h1 class="main-container__input">Вход</h1>
+        <div class="main-container__email">
+          <span class="main-container__email_email">Email</span>
+          <input
+            class="main-container__input_email"
+            type="email"
+            name="email"
+            id="input_email"
+            placeholder="Введите email"
+          />
+        </div>
+        <div class="main-container__password">
+          <span class="main-container__password_password">Пароль</span>
+          <input
+            class="main-container__input_pass"
+            type="password"
+            name="password"
+            id="input_password"
+            placeholder="Введите пароль"
+          />
+        </div>
+        <button class="main-container__button" type="submit">
+          <span class="main-container__button_input">Войти</span>
+        </button>
+      </form>
+
+      <div class="registration">
+        <div class="registration-title">Регистрация</div>
+        <form class="registration-form">
+          <div class="email registration-input">
+            <div class="justify-content-between">
+              <label for="email">* Email</label>
+              <div class="email-error error"></div>
+            </div>
+            <input type="email" id="email" placeholder="Введите email" />
+          </div>
+
+          <div class="registration-input">
+            <div class="justify-content-between">
+              <label for="password">* Пароль</label>
+              <div class="password-error error"></div>
+            </div>
+            <input type="password" id="password" placeholder="Введите пароль" />
+          </div>
+
+          <div class="repeat-password registration-input">
+            <div class="justify-content-between">
+              <label for="repeat-password">* Подтверждение пароля</label>
+              <div class="repeat-password-error error"></div>
+            </div>
+            <input
+              type="password"
+              id="repeat-password"
+              placeholder="Подтвердите пароль"
+            />
+          </div>
+
+          <div class="gender">
+            <label class="gender-title">Пол</label>
+            <div class="gender-input">
+              <input type="radio" name="contact" value="man" />
+              <label>Мужчина</label>
+            </div>
+
+            <div class="gender-input">
+              <input type="radio" name="contact" value="woman" />
+              <label>Женщина</label>
+            </div>
+          </div>
+
+          <div class="about">
+            <label class="about-title">О себе</label>
+            <div>
+              <textarea
+                class="about-textarea"
+                placeholder="Расскажите о себе..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="confirm">
+            <input type="checkbox" name="confirm" id="confirm" />
+            <label for="confirm">Я согласен получать обновления на почту</label>
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Регистрация" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
